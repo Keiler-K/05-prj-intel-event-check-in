@@ -253,6 +253,36 @@ button .fas {
   display: none;
 }
 
+.greetingMessage {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: #0071c5;
+  border: 2px solid #0071c5;
+  border-radius: 12px;
+  padding: 16px 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  max-width: 320px;
+  transition: opacity 0.4s ease;
+}
+
+.greetingMessage.show {
+  display: block;
+  opacity: 1;
+}
+
+.greetingMessage.fade-out {
+  opacity: 0;
+}
+
 .success-message {
   background-color: #e8f4fc;
   color: #003c71;
